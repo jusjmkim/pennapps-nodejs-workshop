@@ -1,0 +1,14 @@
+{
+  "name": "pennapps-nodejs-workshop",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/run-server.js"
+  },
+  "author": "Justin Kim",
+  "dependencies": {
+    "body-parser": "1.8.1",
+    "debug": "2.0.0",
+    "ejs": "1.0.0",
+    "express": "4.9.0"
+  }
+}
