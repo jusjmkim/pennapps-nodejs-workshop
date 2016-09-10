@@ -44,10 +44,25 @@ app.use(function (req, res, next) {
 
 var router = express.Router();
 router.use(function (req, res, next) {
-    console.log('I am running from a router!');
+    console.log('I am a router!');
     next();
 });
 router.get('/', function (req, res, next) {
     res.send('Hello from the router!');
 });
 app.use('/router', router);
+
+{
+  "name": "pennapps-nodejs-workshop",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/run-server.js"
+  },
+  "author": "Justin Kim",
+  "dependencies": {
+    "body-parser": "1.8.1",
+    "debug": "2.0.0",
+    "ejs": "1.0.0",
+    "express": "4.9.0"
+  }
+}
